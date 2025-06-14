@@ -1,0 +1,35 @@
+.about {
+  background-color: #f4efde;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+/* .about-item {
+   display: flex;
+   flex-direction: row;
+   
+} */
+.about-general {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin: 0px 80px 10px 80px;
+}
+.about-item img {
+  height: 200px;
+}
+.underlineAbout {
+  position: relative;
+  display: inline-block;
+}
+.underlineAbout::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -6px;
+  width: 90%;
+  height: 1px;
+  background-color: black;
+}
+

@@ -1,0 +1,56 @@
+.contact {
+  height: 40vh;
+  background-color: #dba539;
+  /* margin: 0; */
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+  font-family: "Playfair Display", serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-logo {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  /* margin-top: 20px; */
+}
+
+.brand {
+  color: #fff;
+  letter-spacing: 3px;
+  margin-top: 10px;
+}
+.contact-icons {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.icon-circle {
+  background-color: white;
+  border-radius: 50%;
+  padding: 8px;
+  font-size: 15px;
+  color: #dba539;
+  transition: 0.3s;
+}
+.icon-circle:hover {
+  transform: scale(1.1);
+}
+.contact-text {
+  font-size: 18px;
+}
+.footer-strip {
+  background-color: #815e1c;
+  padding: 10px 0;
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+}

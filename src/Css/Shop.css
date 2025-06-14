@@ -1,0 +1,95 @@
+.header-page {
+  text-align: center;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  justify-items: center;
+  padding: 20px 0;
+}
+.product-grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  justify-content: center;
+  padding: 20px 0;
+}
+.product-overlay {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.product-overlay img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.view-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 300px;
+  width: 300px;
+
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  display: flex;
+  flex-direction: column;
+}
+.view-button p {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  font-size: 20px;
+}
+.view-button p:hover {
+  color: yellow;
+}
+
+/* .view-button:hover {
+  color: rgb(191, 226, 49);
+} */
+.product-overlay:hover .view-button {
+  opacity: 1;
+  color: white;
+}
+.product-overlay:hover .view-button p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.signa {
+  position: relative;
+  display: inline-block;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 550;
+  font-size: 60px;
+}
+.signa::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -6px;
+  width: 180%;
+  height: 1px;
+  background-color: black;
+}
